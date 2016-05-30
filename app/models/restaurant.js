@@ -7,5 +7,6 @@ export default DS.Model.extend({
   category: DS.attr('string'),
   openAt: DS.attr('date'),
   closeAt: DS.attr('date'),
-  picUrl: DS.attr('string')
+  picUrl: DS.attr('string'),
+  rate: DS.attr('number')
 });
