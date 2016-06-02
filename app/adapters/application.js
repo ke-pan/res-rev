@@ -10,7 +10,6 @@ export default RESTAdapter.extend({
   },
   pathForType(modelName) {
     var camelized = Ember.String.camelize(modelName);
-    var capitalized = Ember.String.capitalize(camelized)
-    return capitalized;
+    return Ember.String.capitalize(camelized);
   }
 });
