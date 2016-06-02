@@ -5,8 +5,8 @@ export default DS.Model.extend({
   location: DS.attr('string'),
   description: DS.attr('string'),
   category: DS.attr('string'),
-  openAt: DS.attr('date'),
-  closeAt: DS.attr('date'),
+  openAt: DS.attr('string'),
+  closeAt: DS.attr('string'),
   picUrl: DS.attr('string'),
   rate: DS.attr('number')
 });
