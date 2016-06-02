@@ -8,5 +8,6 @@ export default DS.Model.extend({
   openAt: DS.attr('string'),
   closeAt: DS.attr('string'),
   picUrl: DS.attr('string'),
-  rate: DS.attr('number')
+  score: DS.attr('number'),
+  rates: DS.hasMany('rate')
 });

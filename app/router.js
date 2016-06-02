@@ -7,7 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('restaurants', { path: '/' }, function() {
-    this.route('show', { path: ':id'});
+    this.route('show', { path: 'restaurants/:id'}, function() {
+      this.route('rates', { resetNamespace: true }, function() {});
+    });
   });
   this.route('users');
 });
