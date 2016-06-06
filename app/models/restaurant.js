@@ -9,5 +9,5 @@ export default DS.Model.extend({
   closeAt: DS.attr('string'),
   picUrl: DS.attr('string'),
   score: DS.attr('number'),
-  rates: DS.hasMany('rate', { async: true })
+  rates: DS.hasMany('rates')
 });

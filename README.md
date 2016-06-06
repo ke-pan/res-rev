@@ -1,4 +1,4 @@
-# Res-rev
+# res-rev
 
 A restaurant review APP
 
