@@ -1,6 +1,6 @@
 {{#each model as |restaurant|}}
   <img src={{restaurant.picUrl}} alt={{restaurant.name}} />
-  <h3> {{restaurant.name}} </h3>
+  <h3> {{link-to restaurant.name "rates" restaurant}}</h3>
   <p> {{restaurant.description}} </p>
   <p> {{restaurant.category}} | {{restaurant.location}} </p>
   <p> Open at {{restaurant.openAt}} </p>
