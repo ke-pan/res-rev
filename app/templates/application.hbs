@@ -1,8 +1,16 @@
-<nav>
-  <h1>Res-Rev</h1>
-  <input type="text" name="search" placeholder="search"/>
-  <button type="button" name="signin">Signin</button>
-  <button type="button" name="signup">Signup</button>
+<nav class="pure-menu pure-menu-horizontal home-head">
+  {{link-to 'Res-Rev' 'restaurants' class="pure-menu-heading"}}
+  <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+          <input type="text" name="search" placeholder="search"/>
+      </li>
+      <li class="pure-menu-item">
+          <a class="pure-menu-link">Signin</a>
+      </li>
+      <li class="pure-menu-item">
+          <a class="pure-menu-link">Signup</a>
+      </li>
+  </ul>
 </nav>
 
 {{outlet}}
