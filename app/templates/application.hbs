@@ -2,7 +2,9 @@
   {{link-to 'Res-Rev' 'restaurants' class="pure-menu-heading"}}
   <ul class="pure-menu-list">
       <li class="pure-menu-item">
-          <input type="text" name="search" placeholder="search"/>
+          <form class="pure-form">
+              <input type="text" name="search" placeholder="search"/>
+          </form>
       </li>
       <li class="pure-menu-item">
           <a class="pure-menu-link">Signin</a>
@@ -13,4 +15,6 @@
   </ul>
 </nav>
 
-{{outlet}}
+<div class="content">
+  {{outlet}}
+</div>
