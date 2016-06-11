@@ -1,7 +1,5 @@
 {{#each model as |restaurant|}}
-  <div class="restaurant-item">
-      <img src={{restaurant.picUrl}} alt={{restaurant.name}} width="288" height="192"/>
-      <h3> {{link-to restaurant.name "rates" restaurant}}</h3>
-      <p> {{restaurant.score}} </p>
-  </div>
+  {{#restaurant-item restaurant=restaurant}}
+    {{rate-stars score=restaurant.score}}
+  {{/restaurant-item}}
 {{/each}}
