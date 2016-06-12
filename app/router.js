@@ -11,7 +11,9 @@ Router.map(function() {
       this.route('rates', { resetNamespace: true }, function() {});
     });
   });
-  this.route('users');
+  this.route('users', function() {
+    this.route('new');
+  });
 });
 
 export default Router;

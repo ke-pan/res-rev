@@ -1,0 +1,6 @@
+<form {{action "save" on="submit"}} >
+  {{input type="text" value=model.name placeholder="name"}}
+  {{input type="password" value=model.password placeholder="password"}}
+  <button type="submit">Sign Up</button>
+  <p> {{errorMessage}} </p>
+</form>
