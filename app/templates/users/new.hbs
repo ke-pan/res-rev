@@ -1,6 +1,9 @@
-<form {{action "save" on="submit"}} >
-  {{input type="text" value=model.name placeholder="name"}}
-  {{input type="password" value=model.password placeholder="password"}}
-  <button type="submit">Sign Up</button>
+<form {{action "save" on="submit"}} class="signup pure-form pure-form-stacked">
+  <legend>Welcome to join us</legend>
+  <label for="name">Name</label>
+  {{input id="name" type="text" value=model.name placeholder="name"}}
+  <label for="password">Password</label>
+  {{input id="password" type="password" value=model.password placeholder="password"}}
+  <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
   <p> {{errorMessage}} </p>
 </form>
