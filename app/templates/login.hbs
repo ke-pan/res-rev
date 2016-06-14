@@ -1,0 +1,9 @@
+<form {{action "login" on="submit"}} class="login pure-form pure-form-stacked">
+  <legend>Welcome back</legend>
+  <label for="name">Name</label>
+  {{input id="name" type="text" value=name placeholder="name"}}
+  <label for="password">Password</label>
+  {{input id="password" type="password" value=password placeholder="password"}}
+  <button type="submit" class="pure-button pure-button-primary">Log In</button>
+  <p> {{errorMessage}} </p>
+</form>

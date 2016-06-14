@@ -6,12 +6,16 @@
               <input type="text" name="search" placeholder="search"/>
           </form>
       </li>
-      <li class="pure-menu-item">
-          <a class="pure-menu-link">LOG IN</a>
-      </li>
-      <li class="pure-menu-item">
-          {{link-to 'SIGN UP' 'users.new' class="pure-menu-link"}}
-      </li>
+      {{#if session.isAuthenticated}}
+        <a class="pure-menu-link" {{action 'invalidateSession'}}>LOG OUT</a>
+      {{else}}
+        <li class="pure-menu-item">
+            {{link-to 'LOG IN' 'login' class="pure-menu-link"}}
+        </li>
+        <li class="pure-menu-item">
+            {{link-to 'SIGN UP' 'users.new' class="pure-menu-link"}}
+        </li>
+      {{/if}}
   </ul>
 </nav>
 
