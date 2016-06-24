@@ -7,7 +7,9 @@
           </form>
       </li>
       {{#if session.isAuthenticated}}
-        <a class="pure-menu-link" {{action 'invalidateSession'}}>LOG OUT</a>
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" {{action 'invalidateSession'}}>LOG OUT</a>
+        </li>
       {{else}}
         <li class="pure-menu-item">
             {{link-to 'LOG IN' 'login' class="pure-menu-link"}}
