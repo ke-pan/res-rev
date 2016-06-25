@@ -1,8 +1,11 @@
-<img src={{model.picUrl}} alt={{model.name}} />
-<h3> {{model.name}} </h3>
-<p> {{model.description}} </p>
-<p> {{model.category}} | {{model.location}} </p>
-<p> Open at {{model.openAt}} </p>
-<p> {{model.rate}} </p>
+<div class="restaurant-show clearfix">
+  <h2> {{model.name}} </h2>
+  <img src={{model.picUrl}} alt={{model.name}} width="288" height="192"/>
+  <div class="restaurant-content">
+    <p> {{model.description}} </p>
+    <address class="address"> Address: {{model.location}} </address>
+    <p> {{model.category}} | Open at {{model.openAt}} </p>
+  </div>
+</div>
 
 {{outlet}}

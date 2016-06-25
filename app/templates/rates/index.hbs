@@ -1,14 +1,16 @@
-<h2>Reviews</h2>
+<div class="reviews">
+  <h2>Reviews</h2>
 
-{{#each model as |rate|}}
-  <div class="review clearfix">
-    <div class="review-author">
-      <img src={{rate.user.avatar}} alt={{rate.user.name}} />
-      {{rate.user.name}}
+  {{#each model as |rate|}}
+    <div class="review clearfix">
+      <div class="review-author">
+        <img src={{rate.user.avatar}} alt={{rate.user.name}} />
+        {{rate.user.name}}
+      </div>
+      <div class="review-content">
+        <p>{{rate-stars score=rate.score}}</p>
+        <p>{{rate.comment}}</p>
+      </div>
     </div>
-    <div class="review-content">
-      <p>{{rate-stars score=rate.score}}</p>
-      <p>{{rate.comment}}</p>
-    </div>
-  </div>
-{{/each}}
+  {{/each}}
+</div>
