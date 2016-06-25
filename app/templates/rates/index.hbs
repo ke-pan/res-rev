@@ -1,6 +1,14 @@
-rates
+<h2>Reviews</h2>
 
 {{#each model as |rate|}}
-  <p>{{rate.score}}</p>
-  <p>{{rate.comment}}</p>
+  <div class="review clearfix">
+    <div class="review-author">
+      <img src={{rate.user.avatar}} alt={{rate.user.name}} />
+      {{rate.user.name}}
+    </div>
+    <div class="review-content">
+      <p>{{rate-stars score=rate.score}}</p>
+      <p>{{rate.comment}}</p>
+    </div>
+  </div>
 {{/each}}
