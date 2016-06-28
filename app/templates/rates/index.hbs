@@ -1,6 +1,10 @@
 <div class="reviews">
   <h2>Reviews</h2>
-  {{star-selection}}
+  {{#if session.isAuthenticated}}
+    {{star-selection}}
+  {{else}}
+    <div class="login-to-review"> {{link-to "Log In" "login"}} to review the restaurant</div>
+  {{/if}}
   {{#each model as |rate|}}
     <div class="review clearfix">
       <div class="review-author">
