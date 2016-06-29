@@ -1,7 +1,7 @@
 <div class="reviews">
   <h2>Reviews</h2>
   {{#if session.isAuthenticated}}
-    {{star-selection}}
+    {{review-form}}
   {{else}}
     <div class="login-to-review"> {{link-to "Log In" "login"}} to review the restaurant</div>
   {{/if}}
