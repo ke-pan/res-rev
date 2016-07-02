@@ -1,5 +1,15 @@
 {{#if session.isAuthenticated}}
-  {{review-form review=model save='save'}}
+  <!-- {{review-form review=model save='save'}} -->
+  <form class="pure-form" {{action "save" on="submit"}}>
+    {{star-selection}}
+    <fieldset class="pure-group">
+      {{textarea type="text" class="pure-input-1" value=model.comment}}
+    </fieldset>
+    <button type="submit"
+            class="pure-button pure-button-primary">
+      Submit
+    </button>
+  </form>
 {{else}}
   <div class="login-to-review"> {{link-to "Log In" "login"}} to review the restaurant</div>
 {{/if}}

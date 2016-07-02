@@ -1,8 +1,8 @@
 <h4>Write your review</h4>
-<form class="pure-form" {{action "submitReview"}}>
+<form class="pure-form" {{action "submitReview" on="submit"}}>
   {{star-selection}}
   <fieldset class="pure-group">
-    {{textarea type="text" class="pure-input-1" value=review.content}}
+    {{textarea type="text" class="pure-input-1" value=review.comment}}
   </fieldset>
   <button type="submit"
           class="pure-button pure-button-primary">
