@@ -14,6 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
+* install [res-rev-server](https://github.com/ke-pan/res-rev-server)
 * `git clone https://github.com/ke-pan/res-rev.git` this repository
 * change into the new directory
 * `npm install`
@@ -21,19 +22,6 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember server`
+* `ember server --proxy http://127.0.0.1:3000`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-TODO
+* Log in with name "John", password "1234qwer" or sign up
