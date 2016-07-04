@@ -9,19 +9,20 @@ export default Ember.Route.extend({
   },
   model() {
     let restaurant = this.modelFor('restaurants/show');
-    let adapterNamespace = this.store.adapterFor('rate').get('namespace')
+    let adapterNamespace = this.store.adapterFor('restaurant').get('namespace')
     this.store.adapterFor('rate').set('namespace', `${adapterNamespace}/restaurants/${restaurant.id}`);
     return this.store.createRecord('rate');
   },
   actions: {
     save() {
       let model = this.modelFor('rates/new');
+      let restaurant = this.modelFor('restaurants/show');
       model.save().then(() => {
-        this.transitionTo('rates');
+        this.transitionTo('rates', restaurant);
       });
     },
     cancel() {
-      this.transitionTo('rates');
+      this.transitionTo('rates', restaurant);
     }
   }
 });

@@ -1,7 +1,7 @@
 {{#if session.isAuthenticated}}
   <!-- {{review-form review=model save='save'}} -->
   <form class="pure-form" {{action "save" on="submit"}}>
-    {{star-selection}}
+    {{star-selection score=model.score}}
     <fieldset class="pure-group">
       {{textarea type="text" class="pure-input-1" value=model.comment}}
     </fieldset>
