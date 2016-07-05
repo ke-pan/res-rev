@@ -11,10 +11,10 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [res-rev-server](https://github.com/ke-pan/res-rev-server)
 
 ## Installation
 
-* install [res-rev-server](https://github.com/ke-pan/res-rev-server)
 * `git clone https://github.com/ke-pan/res-rev.git` this repository
 * change into the new directory
 * `npm install`
@@ -24,4 +24,4 @@ You will need the following things properly installed on your computer.
 
 * `ember server --proxy http://127.0.0.1:3000`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* Log in with name "John", password "1234qwer" or sign up
+* Log in with name "John", password "1234qwer" or Sign up
