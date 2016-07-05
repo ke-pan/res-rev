@@ -22,6 +22,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+* run [res-rev-server](https://github.com/ke-pan/res-rev-server)
 * `ember server --proxy http://127.0.0.1:3000`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Log in with name "John", password "1234qwer" or Sign up
