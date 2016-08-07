@@ -1,0 +1,16 @@
+@import "foundation-settings.scss";
+@import "foundation";
+
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-grid;
+@include foundation-top-bar;
+
+
+header {
+  font-size: 1.2em;
+}
+
+main {
+  margin-top: 1em;
+}
