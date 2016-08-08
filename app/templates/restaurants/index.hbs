@@ -1,5 +1,15 @@
-{{#each model as |restaurant|}}
-  {{#restaurant-item restaurant=restaurant}}
-    {{rate-stars score=restaurant.score}}
-  {{/restaurant-item}}
-{{/each}}
+<ul class="restaurants">
+  {{#each model as |restaurant|}}
+    {{#link-to "rates" restaurant}}
+    <li class="columns large-4 medium-6">
+      <img src={{restaurant.picUrl}} alt={{restaurant.name}}/>
+      <h2> {{restaurant.name}}</h2>
+      <address> Address: {{restaurant.address}} </address>
+      <p>
+        Open from <time>{{restaurant.openAt}}</time>
+        to <time>{{restaurant.closeAt}}</time>
+      </p>
+    </li>
+    {{/link-to}}
+  {{/each}}
+</ul>

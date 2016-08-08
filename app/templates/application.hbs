@@ -1,26 +1,9 @@
-<nav class="pure-menu pure-menu-horizontal home-head">
-  {{link-to 'Res-Rev' 'restaurants' class="pure-menu-heading"}}
-  <ul class="pure-menu-list">
-      <li class="pure-menu-item">
-          <form class="pure-form">
-              <input type="text" name="search" placeholder="search"/>
-          </form>
-      </li>
-      {{#if session.isAuthenticated}}
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" {{action 'invalidateSession'}}>LOG OUT</a>
-        </li>
-      {{else}}
-        <li class="pure-menu-item">
-            {{link-to 'LOG IN' 'login' class="pure-menu-link"}}
-        </li>
-        <li class="pure-menu-item">
-            {{link-to 'SIGN UP' 'users.new' class="pure-menu-link"}}
-        </li>
-      {{/if}}
-  </ul>
-</nav>
+<header class="top-bar">
+  <div class="row">
+    {{link-to "Res-Rev" "restaurants" class="top-bar-left"}}
+  </div>
+</header>
 
-<div class="content clearfix">
+<main class="row">
   {{outlet}}
-</div>
+</main>

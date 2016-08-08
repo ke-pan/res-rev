@@ -8,9 +8,31 @@
 
 
 header {
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 
 main {
   margin-top: 1em;
+}
+
+.restaurants {
+  li {
+    list-style: none;
+    h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    address, p {
+      font-style: normal;
+    }
+  }
+
+  a {
+    color: #333;
+  }
+
+  a:focus {
+    outline: 0;
+    box-shadow: 0px 0px 5px 5px #cecece;
+  }
 }
