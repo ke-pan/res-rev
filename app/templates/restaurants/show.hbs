@@ -1,10 +1,13 @@
-<div class="restaurant-show clearfix">
-  <h2> {{model.name}} </h2>
-  <img src={{model.picUrl}} alt={{model.name}} width="288" height="192"/>
-  <div class="restaurant-content">
-    <p> {{model.description}} </p>
-    <address class="address"> Address: {{model.address}} </address>
-    <p> {{model.category}} | Open at {{model.openAt}} </p>
+<div class="restaurant-show">
+  <h1 class="text-center" tabindex="0"> {{model.name}} </h1>
+  <img class="medium-6" src={{model.picUrl}} alt={{model.name}} />
+  <div class="content columns medium-6">
+    <p tabindex="0"> Description: {{model.description}} </p>
+    <address tabindex="0"> Address: {{model.address}} </address>
+    <p tabindex="0">
+      Open from <time>{{model.openAt}}</time>
+      to <time>{{model.closeAt}}</time>
+    </p>
   </div>
 </div>
 

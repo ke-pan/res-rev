@@ -37,3 +37,13 @@ main {
     }
   }
 }
+
+.restaurant-show {
+  .content {
+    font-size: 1.2em;
+    address, p {
+      font-style: normal;
+      margin-bottom: 0.5em;
+    }
+  }
+}
