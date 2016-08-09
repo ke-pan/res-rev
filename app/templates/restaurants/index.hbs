@@ -1,15 +1,13 @@
 <ul class="restaurants">
   {{#each model as |restaurant|}}
-    {{#link-to "rates" restaurant}}
     <li class="columns large-4 medium-6">
-      <img src={{restaurant.picUrl}} alt={{restaurant.name}}/>
-      <h2> {{restaurant.name}}</h2>
-      <address> Address: {{restaurant.address}} </address>
-      <p>
+      <img src={{restaurant.picUrl}} alt="food of {{restaurant.name}}" tabindex="0"/>
+      <h2> {{link-to restaurant.name "reviews" restaurant}}</h2>
+      <address tabindex="0"> Address: {{restaurant.address}} </address>
+      <p tabindex="0">
         Open from <time>{{restaurant.openAt}}</time>
         to <time>{{restaurant.closeAt}}</time>
       </p>
     </li>
-    {{/link-to}}
   {{/each}}
 </ul>

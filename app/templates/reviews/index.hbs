@@ -1,0 +1,17 @@
+
+<p> {{link-to "Write a review" "reviews.new" class="new-link"}} </p>
+<div class="reviews">
+  <h2>Reviews</h2>
+  {{#each model as |review|}}
+    <div class="review clearfix">
+      <div class="review-author">
+        <img src={{review.user.avatar}} alt={{review.user.name}} />
+        {{review.user.name}}
+      </div>
+      <div class="review-content">
+        <p>{{review-stars score=review.score}}</p>
+        <p>{{review.comment}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>

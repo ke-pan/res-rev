@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('adapter:rate', 'Unit | Adapter | rate', {
+moduleFor('adapter:review', 'Unit | Adapter | review', {
   // Specify the other units that are required for this test.
   // needs: ['serializer:foo']
 });

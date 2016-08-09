@@ -12,7 +12,7 @@ module.exports = function(defaults) {
     }
   });
 
-  // Use `app.import` to add additional libraries to the generated
+  // Use `app.import` to add additional libraries to the genereviewd
   // output files.
   //
   // If you need to use different assets in different
