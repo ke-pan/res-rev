@@ -3,11 +3,10 @@
 <div class="reviews">
   <h2>Reviews</h2>
   {{#each model as |review|}}
-    <div class="review clearfix">
-      <div class="review-author">
-        <img src={{review.user.avatar}} alt={{review.user.name}} />
-        {{review.user.name}}
-      </div>
+    <div class="review">
+      <p>
+        {{review.reviewerName}} at {{moment-from-now review.reviewDate}}
+      </p>
       <div class="review-content">
         <!-- <p>{{review-stars score=review.score}}</p> -->
         <p>{{review.comment}}</p>
