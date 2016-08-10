@@ -5,6 +5,7 @@
 @include foundation-typography;
 @include foundation-grid;
 @include foundation-top-bar;
+@include foundation-float-classes;
 
 :focus {
   outline: 0;
@@ -45,5 +46,17 @@ main {
       font-style: normal;
       margin-bottom: 0.5em;
     }
+  }
+}
+
+.review {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 1em;
+  .info {
+    background-color: #eee;
+  }
+  p {
+    padding: 0.5em;
   }
 }
