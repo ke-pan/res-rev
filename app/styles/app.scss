@@ -7,6 +7,8 @@
 @include foundation-grid;
 @include foundation-top-bar;
 @include foundation-float-classes;
+@include foundation-forms;
+@include foundation-button;
 
 :focus {
   outline: 0;
@@ -46,6 +48,16 @@ main {
     address, p {
       font-style: normal;
       margin-bottom: 0.5em;
+    }
+  }
+}
+
+.new-review {
+  margin: 2em 0;
+  .fail {
+    color: red;
+    input, textarea {
+      border-color: red;
     }
   }
 }

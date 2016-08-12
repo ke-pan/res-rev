@@ -1,5 +1,32 @@
+<div class="new-review">
+  <h2 tabindex="0">Write a review</h2>
+  <form {{action "createReview" on="submit"}}>
+    <label class={{if nameValid "small-6" "small-6 fail"}}>
+      your name: {{input value=reviewerName}}
+      {{#unless nameValid}}
+        <span role="alert">please input your name</span>
+      {{/unless}}
+    </label>
+    <label class=" small-6">score:
+      <!-- {{input value=score}} -->
+      {{#x-select value=score as |s|}}
+        {{#s.option value=1}}1{{/s.option}}
+        {{#s.option value=2}}2{{/s.option}}
+        {{#s.option value=3}}3{{/s.option}}
+        {{#s.option value=4}}4{{/s.option}}
+        {{#s.option value=5}}5{{/s.option}}
+      {{/x-select}}
+    </label>
+    <label class={{if commentValid "" "fail"}}>
+      comment: {{textarea value=comment rows="4"}}
+      {{#unless commentValid}}
+        <span role="alert">please input some comment</span>
+      {{/unless}}
+    </label>
+    {{input type="submit" class="button" value="submit"}}
+  </form>
+</div>
 
-<p> {{link-to "Write a review" "reviews.new" class="new-link"}} </p>
 <div class="reviews">
   <h2 tabindex="0">Reviews</h2>
   {{#each model as |review|}}
