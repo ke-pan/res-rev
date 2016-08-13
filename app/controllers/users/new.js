@@ -28,8 +28,8 @@ export default Ember.Controller.extend({
         return false;
       }
       this.get('model').save().then(() => {
-        this.transitionToRoute('login')
-      })
+        this.transitionToRoute('login');
+      });
     }
   }
 });
