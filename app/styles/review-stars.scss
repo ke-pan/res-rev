@@ -1,51 +1,41 @@
-.review-5 {
+.review-stars img {
   width: 100px;
   height: 16px;
-  background: url('images/review-stars.png') 0 -680px;
+  object-fit: none;
 }
 
-.review-4-5 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -700px;
+.star-5 img {
+  object-position: 0 -680px;
 }
 
-
-.review-4 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -720px;
+.star-4-5 img {
+  object-position: 0 -700px;
 }
 
 
-.review-3-5 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -740px;
+.star-4 img {
+  object-position: 0 -720px;
 }
 
 
-.review-3 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -760px;
+.star-3-5 img {
+  object-position: 0 -740px;
 }
 
 
-.review-2 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -780px;
+.star-3 img {
+  object-position: 0 -760px;
 }
 
-.review-1 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -800px;
+
+.star-2 img {
+  object-position: 0 -780px;
 }
 
-.review-0 {
-  width: 100px;
-  height: 16px;
-  background: url('images/review-stars.png') 0 -820px;
+.star-1 img {
+  object-position: 0 -800px;
+}
+
+.star-0 img {
+  object-position: 0 -820px;
 }
