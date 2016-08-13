@@ -7,11 +7,10 @@ A restaurant review APP
 You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
+* [Node.js](http://nodejs.org/) (node 5.7.x)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
-* [res-rev-server](https://github.com/ke-pan/res-rev-server)
 
 ## Installation
 
@@ -22,7 +21,9 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* run [res-rev-server](https://github.com/ke-pan/res-rev-server)
-* `ember server --proxy http://127.0.0.1:3000`
+* `ember server `
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* Log in with name "John", password "1234qwer" or Sign up
+
+## Build
+
+* `ember build`
