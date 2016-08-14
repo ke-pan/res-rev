@@ -65,6 +65,31 @@ main {
       border-color: red;
     }
   }
+  .score {
+    width: 10em;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    label {
+      display: inline-block;
+      input {
+        position: absolute;
+        left: -999999px;
+      }
+    }
+
+    label::before {
+      font-size: 2em;
+      font-family: FontAwesome;
+      content: "\f006";
+    }
+
+    label:hover::before,
+    label:hover ~ label::before,
+    label.selected::before,
+    label.selected ~ label:before {
+      content: "\f005";
+    }
+  }
 }
 
 .review {

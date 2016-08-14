@@ -7,8 +7,7 @@
         <span role="alert">please input your name</span>
       {{/unless}}
     </label>
-    <label class=" small-6">score:
-      <!-- {{input value=score}} -->
+    <!-- <label class="small-6">score:
       {{#x-select value=score as |s|}}
         {{#s.option value=1}}1{{/s.option}}
         {{#s.option value=2}}2{{/s.option}}
@@ -16,7 +15,29 @@
         {{#s.option value=4}}4{{/s.option}}
         {{#s.option value=5}}5{{/s.option}}
       {{/x-select}}
-    </label>
+    </label> -->
+    <div class="score">
+      <label class={{if (eq score 5) "selected"}}>
+        <input type="radio" name="score" value="5" title="5 stars"
+          {{action "selectScore" 5 on="change"}}>
+      </label>
+      <label class={{if (eq score 4) "selected"}}>
+        <input type="radio" name="score" value="4" title="4 stars"
+          {{action "selectScore" 4 on="change"}}>
+      </label>
+      <label class={{if (eq score 3) "selected"}}>
+        <input type="radio" name="score" value="3" title="3 stars"
+          {{action "selectScore" 3 on="change"}}>
+      </label>
+      <label class={{if (eq score 2) "selected"}}>
+        <input type="radio" name="score" value="2" title="2 stars"
+          {{action "selectScore" 2 on="change"}}>
+      </label>
+      <label class={{if (eq score 1) "selected"}}>
+        <input type="radio" name="score" value="1" title="1 stars" 
+          {{action "selectScore" 1 on="change"}}>
+      </label>
+    </div>
     <label class={{if commentValid "" "fail"}}>
       comment: {{textarea value=comment rows="4"}}
       {{#unless commentValid}}

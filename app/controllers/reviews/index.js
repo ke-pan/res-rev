@@ -25,10 +25,10 @@ export default Ember.Controller.extend({
           reviewDate: new Date()
         });
         newReview.save();
-        // .then(function() {
-        //   this.get('reviews').pushObject(newReview);
-        // });
       }
+    },
+    selectScore(score) {
+      this.set('score', score);
     }
   }
 });
