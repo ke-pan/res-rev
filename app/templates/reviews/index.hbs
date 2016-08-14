@@ -1,5 +1,5 @@
 <div class="new-review">
-  <h2 tabindex="0">Write a review</h2>
+  <h2>Write a review</h2>
   <form {{action "createReview" on="submit"}}>
     <label class={{if nameValid "small-6" "small-6 fail"}}>
       your name: {{input value=reviewerName}}
@@ -28,9 +28,9 @@
 </div>
 
 <div class="reviews">
-  <h2 tabindex="0">Reviews</h2>
+  <h2>Reviews</h2>
   {{#each model as |review|}}
-    <div class="review" tabindex="0">
+    <div class="review">
       <p class="info">
         {{review.reviewerName}} at {{moment-from-now review.reviewDate}}
       </p>

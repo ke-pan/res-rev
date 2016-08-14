@@ -1,10 +1,10 @@
 <ul class="restaurants">
   {{#each model as |restaurant|}}
     <li class="columns large-4 medium-6">
-      <img src={{restaurant.picUrl}} alt="food of {{restaurant.name}}" tabindex="0"/>
+      <img src={{restaurant.picUrl}} alt="food of {{restaurant.name}}"/>
       <h2> {{link-to restaurant.name "reviews" restaurant}}</h2>
-      <address tabindex="0"> Address: {{restaurant.address}} </address>
-      <p tabindex="0">
+      <address> Address: {{restaurant.address}} </address>
+      <p>
         Open from <time>{{restaurant.openAt}}</time>
         to <time>{{restaurant.closeAt}}</time>
       </p>

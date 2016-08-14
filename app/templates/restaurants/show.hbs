@@ -1,10 +1,10 @@
 <div class="restaurant-show clearfix">
-  <h1 class="text-center" tabindex="0"> {{model.name}} </h1>
+  <h2 class="text-center"> {{model.name}} </h2>
   <img class="medium-6" src={{model.picUrl}} alt={{model.name}} />
   <div class="content columns medium-6">
-    <p tabindex="0"> Description: {{model.description}} </p>
-    <address tabindex="0"> Address: {{model.address}} </address>
-    <p tabindex="0">
+    <p> Description: {{model.description}} </p>
+    <address> Address: {{model.address}} </address>
+    <p>
       Open from <time>{{model.openAt}}</time>
       to <time>{{model.closeAt}}</time>
     </p>
