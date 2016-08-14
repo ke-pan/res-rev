@@ -15,6 +15,10 @@
   box-shadow: 0px 0px 5px 5px #cecece;
 }
 
+[role=alert] {
+  color: red;
+}
+
 a {
   color: #004f7c;
 }
@@ -24,10 +28,16 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-header h1 {
-  font-size: 1.5em;
-  margin: 0;
+header.top-bar {
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  input {
+    margin: 0;
+  }
 }
+
 
 main {
   margin-top: 1em;

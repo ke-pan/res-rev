@@ -1,13 +1,32 @@
-<ul class="restaurants">
-  {{#each model as |restaurant|}}
-    <li class="columns large-4 medium-6">
-      <img src={{restaurant.picUrl}} alt="food of {{restaurant.name}}"/>
-      <h2> {{link-to restaurant.name "reviews" restaurant}}</h2>
-      <address> Address: {{restaurant.address}} </address>
-      <p>
-        Open from <time>{{restaurant.openAt}}</time>
-        to <time>{{restaurant.closeAt}}</time>
-      </p>
-    </li>
-  {{/each}}
-</ul>
+<header class="top-bar">
+  <div class="row">
+    <h1 class="top-bar-left">{{link-to "Res-Rev" "restaurants"}}</h1>
+    <input
+      type="text"
+      value={{filter}}
+      aria-label="search restaurants"
+      placeholder="search restaurants"
+      class="top-bar-right"
+      onkeyup={{action "setFilter" value="target.value"}}
+    />
+  </div>
+</header>
+
+<main class="row">
+  <ul class="restaurants">
+    {{#if (eq restaurants.length 0)}}
+      <p class='text-center' role='alert'> No Restaurant Found! </p>
+    {{/if}}
+    {{#each restaurants as |restaurant|}}
+      <li class="columns large-4 medium-6">
+        <img src={{restaurant.picUrl}} alt="food of {{restaurant.name}}"/>
+        <h2> {{link-to restaurant.name "reviews" restaurant}}</h2>
+        <address> Address: {{restaurant.address}} </address>
+        <p>
+          Open from <time>{{restaurant.openAt}}</time>
+          to <time>{{restaurant.closeAt}}</time>
+        </p>
+      </li>
+    {{/each}}
+  </ul>
+</main>
